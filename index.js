@@ -19,7 +19,6 @@ app.post("/",(req,res)=>{
   const { to,subjekt,text } = req.body 
   console.table({to,subjekt,text})
   sendmail.sendmail(to,text,subjekt)
-  
 })
 
 app.listen(80,()=>{
