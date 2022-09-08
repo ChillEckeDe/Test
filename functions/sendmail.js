@@ -7,12 +7,12 @@ async function sendmail(to,content,subjekt){
   var transporter = nodemailer.createTransport({
         service:"gmail",
         auth:{
-            user:"chillhosting439@gmail.com",
-            pass:"gxxhmmjtntbuwuiz"
+            user:"email",
+            pass:"smtp password"
         }
     });
   var mailoptions = {
-        from: "GoodVibess.de <system@goodvibess.de>",
+        from: "Name <your@yourname.com>",
         to:to,
         subject:subjekt,
         text:content
